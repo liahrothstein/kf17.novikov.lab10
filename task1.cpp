@@ -27,7 +27,7 @@ int main() {
 
     // Ввод с клавиатуры еще 2-х элемента
     printf("\n--- Добавление новых данных ---\n");
-    arrPush(2, MAX_SIZE, currentCount, planets);
+    arrPush(2, MAX_SIZE, &currentCount, planets);
 
     // Вывод всех элементов массива структур на экран
     printf("\nИтоговая таблица данных:\n");

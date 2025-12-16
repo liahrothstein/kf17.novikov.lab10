@@ -45,12 +45,12 @@ struct Planet inputPlanet() {
 }
 
 // Функция для заполнения структурами массива
-void arrPush(int amountElem, const int MAX_SIZE, int currentCount, struct Planet planets[]) {
+void arrPush(int amountElem, const int MAX_SIZE, int *currentCount, struct Planet planets[]) {
     for (int i = 0; i < amountElem; ++i) {
-        if (currentCount < MAX_SIZE) {
+        if (*currentCount < MAX_SIZE) {
             printf("Элемент %d из %d:\n", i + 1, amountElem);
-            planets[currentCount] = inputPlanet();
-            currentCount++;
+            planets[*currentCount] = inputPlanet();
+            (*currentCount)++;
         } else {
             printf("Массив переполнен!\n");
         }
