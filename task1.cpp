@@ -20,7 +20,7 @@ int main() {
     };
 
     // Копирование инициализированных данных в основной массив
-    arrCopy(5, currentCount, planets, initData);
+    arrCopy(5, &currentCount, planets, initData);
 
     printf("Начальное состояние массива:\n");
     printPlanets(planets, currentCount);

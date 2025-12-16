@@ -58,9 +58,9 @@ void arrPush(int amountElem, const int MAX_SIZE, int currentCount, struct Planet
 }
 
 // Функция для копирования элементов массива
-void arrCopy(int amountElem, int currentCount, struct Planet planets[], struct Planet initData[]) {
+void arrCopy(int amountElem, int *currentCount, struct Planet planets[], struct Planet initData[]) {
     for(int i = 0; i < amountElem; i++) {
-        planets[currentCount] = initData[i];
-        currentCount++;
+        planets[*currentCount] = initData[i];
+        (*currentCount)++;
     }
 }

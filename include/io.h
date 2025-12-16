@@ -10,6 +10,6 @@ void printRow(struct Planet p, int id);
 void printPlanets(struct Planet planets[], int count);
 struct Planet inputPlanet();
 void arrPush(int amountElem, const int MAX_SIZE, int currentCount, struct Planet planets[]);
-void arrCopy(int amountElem, int currentCount, struct Planet planets[], struct Planet initData[]);
+void arrCopy(int amountElem, int *currentCount, struct Planet planets[], struct Planet initData[]);
 
 #endif
